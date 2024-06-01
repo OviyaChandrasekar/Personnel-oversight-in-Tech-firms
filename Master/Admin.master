@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="web_Master_Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>HRMS</title>
+    <!-- Meta tag Keywords -->
+  
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+    <!-- //Fonts -->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    <body>
+    <form id="form1" runat="server">
+
+            <div id="home" class="inner-w3pvt-page">
+        <div class="overlay-innerpage">
+            <!-- banner -->
+            <div class="top_w3pvt_main container">
+
+                <!-- nav -->
+                <div class="nav_w3pvt text-center">
+                    <!-- nav -->
+                    <nav class="lavi-wthree">
+                        <div id="logo">
+                            <h1> <a class="navbar-brand" href="index.html">HRMS</a>
+                            </h1>
+                        </div>
+
+                        <label for="drop" class="toggle">Menu</label>
+                        <input type="checkbox" id="drop" />
+
+                        <div id='mainmenu'>
+                    <ul>
+                        <li class='active'><a href="../Admin/Home.aspx"><span>Home</span></a></li>
+                        <li><a href="../Admin/AddHr.aspx"><span>HR Creation</span></a></li>
+                        <li><a href="../Admin/ViewResults.aspx"><span>View Results</span></a></li>
+                     
+                         <li><a href="../Admin/ViewApplicant.aspx"><span>Applicant Details</span></a></li>
+                        <li class='last'><a href="../Home.aspx"><span>Logout</span></a></li>
+                    </ul>
+                </div>
+                    </nav>
+                    <!-- //nav -->
+                    <p> Welcome Admin</p>
+                </div>
+            </div>
+            <!-- //nav -->
+           
+        </div>
+        <!-- //banner -->
+              
+    </div>
+
+
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+
+        <div class="copy_right p-3 d-flex justify-content-around">
+
+   
+
+        </p>
+        <!-- move top -->
+      
+        <!-- move top -->
+    </div>
+
+
+</body>
+</html>
